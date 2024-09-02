@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Dealer App
 
-## Getting Started
+## Overview
+This is a simple web application for browsing car models by make and year, built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Features
+- Search for vehicle models by make and model year.
+- Responsive design.
+- Lazy loading of vehicle cards using React Suspense.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/car-dealer-app.git
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
+   ```bash
+   cd car-dealer-app
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+4. Create a .env.local file in the root directory and add your environment variables:
+   ```bash
+   NEXT_PUBLIC_API_URL=https://vpic.nhtsa.dot.gov/api/vehicles
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Running the Application
+To start the development server, run:
+   ```bash
+   npm run dev
+   ```
+   The application will be available at http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Linting and Formatting
+- To lint the code:
+   ```bash
+   npm run lint
+   ```
+- To format the code:
+   ```bash
+   npm run format
+   ```
+## Contributing
+Contributions are welcome! Please submit a pull request with your changes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
